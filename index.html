@@ -3,97 +3,116 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>โปรไฟล์ของฉัน</title>
-  <style>
-    body {
-      font-family: 'Kanit', sans-serif;
-      background: linear-gradient(to right, #83a4d4, #b6fbff);
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      padding: 40px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      margin-top: 50px;
-      border-radius: 15px;
-    }
-
-    .profile-img {
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid #4da8da;
-      display: block;
-      margin: auto;
-    }
-
-    h1 {
-      text-align: center;
-      color: #2c3e50;
-      margin-top: 20px;
-    }
-
-    .intro {
-      text-align: center;
-      font-size: 18px;
-      margin-top: 10px;
-      line-height: 1.6;
-    }
-
-    .info {
-      margin-top: 30px;
-    }
-
-    .info h2 {
-      color: #4da8da;
-      margin-bottom: 10px;
-    }
-
-    .info p {
-      margin: 5px 0;
-    }
-
-    .social {
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    .social a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #4da8da;
-      font-weight: bold;
-    }
-  </style>
+  <title>Profile - นนทวัฒน์ นาเวียง</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-900 text-white font-sans leading-relaxed">
 
-  <div class="container">
-    <img src="pop.jfif" alt="รูปโปรไฟล์" class="profile-img">
-    <h1>สวัสดีครับ ผมชื่อ นนทวัฒน์ นาเวียง </h1>
-    <p class="intro">
-      ผมเป็นนักพัฒนาเว็บไซต์ที่หลงใหลในเทคโนโลยีและการออกแบบ มีประสบการณ์ในด้าน HTML, CSS, JavaScript และ React
-      ชื่นชอบการเรียนรู้สิ่งใหม่ ๆ และมุ่งมั่นที่จะพัฒนาอย่างต่อเนื่อง
-    </p>
+  <!-- Container -->
+  <div class="max-w-4xl mx-auto p-6 space-y-10">
 
-    <div class="info">
-      <h2>ข้อมูลส่วนตัว</h2>
-      <p><strong>ชื่อ:</strong> นนทวัฒน์ นาเวียง </p>
-      <p><strong>อีเมล:</strong> far770877@gmail.com</p>
-      <p><strong>ที่อยู่:</strong> บึงกาฬ, ประเทศไทย</p>
-    </div>
+    <!-- Profile Section -->
+    <section class="text-center">
+      <img src="564328780_18283603627263711_6660858319929677290_n.jpg" alt="Profile" class="w-40 h-40 mx-auto rounded-full object-cover shadow-lg border-4 border-indigo-500">
+      <h1 class="text-3xl font-bold mt-4">นนทวัฒน์ นาเวียง (Nonthawat Nawiang)</h1>
+      <p class="text-indigo-300 mt-2">นักศึกษาคณะวิทยาศาสตร์ สาขาเทคโนโลยีสารสนเทศ</p>
+      <p class="text-gray-400">มหาวิทยาลัยราชภัฏอุดรธานี ชั้นปีที่ 2</p>
+      <p class="mt-3 text-gray-300">สนใจด้าน Web Development และ Artificial Intelligence (AI)</p>
+    </section>
 
-    <div class="social">
-      <h2>ช่องทางติดต่อ</h2>
-      <a href="https://github.com/sSkyEyeSs">sSkyEyeSs.github.io
-</a>
-    </div>
+    <!-- Skills Section -->
+    <section>
+      <h2 class="text-2xl font-semibold text-indigo-400 mb-4">🛠️ ทักษะ (Skills)</h2>
+      <div class="grid sm:grid-cols-2 gap-6">
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-indigo-300">Technical Skills</h3>
+          <ul class="list-disc list-inside text-gray-300 space-y-1">
+            <li>💡 HTML</li>
+            <li>🤖 AI</li>
+            <li>🗄️ SQL</li>
+            <li>🧰 Git, VS Code</li>
+            <li>🎨 Figma</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2 text-indigo-300">Soft Skills</h3>
+          <ul class="list-disc list-inside text-gray-300 space-y-1">
+            <li>การแก้ไขปัญหา</li>
+            <li>การสื่อสาร</li>
+            <li>การทำงานเป็นทีม</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section>
+      <h2 class="text-2xl font-semibold text-indigo-400 mb-4">🚀 ผลงานที่ผ่านมา (Projects / Portfolio)</h2>
+      <ul class="list-disc list-inside text-gray-300 space-y-1">
+        <li>🎮 ระบบเกม (Game System)</li>
+        <li>🗳️ ระบบโหวต (Voting System)</li>
+        <li>🔢 ระบบสุ่มเลข (Random Number System)</li>
+        <li>🏪 ออกแบบแอปร้านค้า (Shop App Design) ด้วย Figma</li>
+      </ul>
+      <p class="mt-2">🔗 GitHub: 
+        <a href="https://sskyeyess.github.io/" target="_blank" class="text-indigo-400 hover:underline">
+          sskyeyess.github.io
+        </a>
+      </p>
+      <p class="text-gray-400 text-sm mt-2">🖼️ (สามารถเพิ่มภาพ Screenshot หรือ Demo ภายหลังได้)</p>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2 class="text-2xl font-semibold text-indigo-400 mb-4">🎓 การศึกษา (Education)</h2>
+      <div class="text-gray-300">
+        <p>คณะวิทยาศาสตร์ สาขาเทคโนโลยีสารสนเทศ</p>
+        <p>มหาวิทยาลัยราชภัฏอุดรธานี</p>
+        <p>📅 พ.ศ. 2567 – ปัจจุบัน</p>
+      </div>
+    </section>
+
+    <!-- Activities -->
+    <section>
+      <h2 class="text-2xl font-semibold text-indigo-400 mb-4">🏅 กิจกรรมและผลงานอื่น ๆ (Activities / Achievements)</h2>
+      <ul class="list-disc list-inside text-gray-300 space-y-1">
+        <li>ผู้เข้าร่วมอบรม Startup Coaching Camp</li>
+        <li>เข้าร่วมแข่งขัน UDRU Pro League ROV</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section>
+      <h2 class="text-2xl font-semibold text-indigo-400 mb-4">✉️ ติดต่อ (Contact)</h2>
+      <ul class="text-gray-300 space-y-2">
+        <li>📧 Email: 
+          <a href="mailto:67040233130@udru.ac.th" class="text-indigo-400 hover:underline">
+            67040233130@udru.ac.th
+          </a>
+        </li>
+        <li>🐙 GitHub: 
+          <a href="https://sskyeyess.github.io/" target="_blank" class="text-indigo-400 hover:underline">
+            https://sskyeyess.github.io/
+          </a>
+        </li>
+        <li>📘 Facebook: 
+          <a href="https://www.facebook.com/fha.iiar" target="_blank" class="text-indigo-400 hover:underline">
+            https://www.facebook.com/fha.iiar
+          </a>
+        </li>
+        <li>📍 จังหวัดอุดรธานี</li>
+      </ul>
+    </section>
+
+    <!-- Goals -->
+    <section>
+      <h2 class="text-2xl font-semibold text-indigo-400 mb-4">🎯 เป้าหมายในอนาคต (Future Goals)</h2>
+      <p class="text-gray-300">
+        อยากทำงานด้านการออกแบบแอปพลิเคชัน เว็บไซต์ ตัดต่อคลิป และพัฒนา AI 
+        เพื่อช่วยเพิ่มประสิทธิภาพการทำงานในอนาคต
+      </p>
+    </section>
+
   </div>
 
 </body>
